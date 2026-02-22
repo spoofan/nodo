@@ -1,0 +1,164 @@
+/* ===================================================
+   T-Shirt Store — Custom CSS (child-classic theme)
+   =================================================== */
+
+/* === Size picker as clickable buttons === */
+.product-variants .product-variants-item[data-attribute-group="size"] .radio-label {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.product-variants .product-variants-item[data-attribute-group="size"] input[type="radio"]:checked + .radio-label {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.product-variants .product-variants-item[data-attribute-group="size"] .radio-label:hover {
+    border-color: #666;
+}
+
+.product-variants .product-variants-item[data-attribute-group="size"] input[type="radio"] {
+    display: none;
+}
+
+/* === Homepage category grid === */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.category-tile {
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.category-tile:hover {
+    transform: translateY(-4px);
+}
+
+.category-tile img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.category-tile h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.category-tile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === CTA banner block === */
+.cta-banner {
+    background-size: cover;
+    background-position: center;
+    padding: 80px 40px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+}
+
+.cta-banner > * {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-banner h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-banner p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.cta-banner .btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* === Product page — color swatch refinements === */
+.product-variants .input-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.product-variants .input-color:checked + span,
+.product-variants .input-color.selected + span {
+    border: 2px solid #000;
+    transform: scale(1.15);
+}
+
+/* === Stock availability badge === */
+.product-availability .availability-in-stock {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.product-availability .availability-out-of-stock {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.product-availability .availability-last-remaining {
+    color: #e67e22;
+    font-weight: 600;
+}
+
+/* === Featured products grid tweak === */
+#featured-products .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+/* === General responsive helpers === */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .cta-banner {
+        padding: 50px 20px;
+    }
+
+    .cta-banner h2 {
+        font-size: 1.8em;
+    }
+}
