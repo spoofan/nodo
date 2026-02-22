@@ -210,8 +210,9 @@ p, li, label, input, select, textarea, .form-control {
   color: var(--nodo-ink);
 }
 
-.product-price-and-shipping .price {
-  color: var(--nodo-ink);
+.product-price-and-shipping .price,
+.product-price {
+  color: var(--nodo-ink) !important;
 }
 
 .product-price-and-shipping .regular-price {
@@ -248,15 +249,21 @@ p, li, label, input, select, textarea, .form-control {
   line-height: 1.4;
 }
 
-.product-flag.new {
-  background: var(--nodo-accent);
-  color: var(--nodo-white);
+.product-flag.new,
+.product-flags li.product-flag.new {
+  background: var(--nodo-accent) !important;
+  color: var(--nodo-white) !important;
 }
 
 .product-flag.discount,
-.product-flag.on-sale {
-  background: var(--nodo-ink);
-  color: var(--nodo-white);
+.product-flag.on-sale,
+.product-flags li.product-flag.discount,
+.product-flags li.product-flag.discount-amount,
+.product-flags li.product-flag.discount-percentage,
+.product-flags li.product-flag.on-sale {
+  background: var(--nodo-ink) !important;
+  background-color: var(--nodo-ink) !important;
+  color: var(--nodo-white) !important;
 }
 
 /* Fade-up stagger */
@@ -292,10 +299,12 @@ h2.products-section-title {
    =================================================== */
 
 .btn-primary,
-.btn-primary:visited {
-  background-color: var(--nodo-accent);
-  border-color: var(--nodo-accent);
-  color: var(--nodo-white);
+.btn-primary:visited,
+a.btn-primary,
+button.btn-primary {
+  background-color: var(--nodo-accent) !important;
+  border-color: var(--nodo-accent) !important;
+  color: var(--nodo-white) !important;
   border-radius: 0;
   font-family: 'Jost', sans-serif;
   font-weight: 500;
@@ -310,10 +319,12 @@ h2.products-section-title {
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active {
-  background-color: #a8481a;
-  border-color: #a8481a;
-  color: var(--nodo-white);
+.btn-primary:active,
+a.btn-primary:hover,
+button.btn-primary:hover {
+  background-color: #a8481a !important;
+  border-color: #a8481a !important;
+  color: var(--nodo-white) !important;
   letter-spacing: 0.15em;
   box-shadow: none;
 }
