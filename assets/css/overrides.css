@@ -1,0 +1,58 @@
+/* Nodo — Specificity overrides (loaded after custom.css, priority 210) */
+
+/* Product flag: NEW — terracotta, overrides parent li.product-flag rule */
+.product-flag.new,
+.product-flags li.product-flag.new {
+  background: #C9581E !important;
+  color: #FFFFFF !important;
+}
+
+/* Product flag: discount — near-black, overrides parent orange */
+.product-flag.discount,
+.product-flag.on-sale,
+.product-flags li.product-flag.discount,
+.product-flags li.product-flag.discount-amount,
+.product-flags li.product-flag.discount-percentage,
+.product-flags li.product-flag.on-sale {
+  background: #111111 !important;
+  background-color: #111111 !important;
+  color: #FFFFFF !important;
+}
+
+/* Buttons — terracotta, overrides parent teal */
+.btn-primary,
+a.btn-primary,
+button.btn-primary {
+  background-color: #C9581E !important;
+  border-color: #C9581E !important;
+  color: #FFFFFF !important;
+  border-radius: 0 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+a.btn-primary:hover,
+button.btn-primary:hover {
+  background-color: #a8481a !important;
+  border-color: #a8481a !important;
+  color: #FFFFFF !important;
+}
+
+/* Product price — near-black, overrides parent teal */
+.product-price,
+.product-price-and-shipping .price {
+  color: #111111 !important;
+}
+
+/* Links on hover — terracotta instead of teal */
+#header a:hover {
+  color: #C9581E !important;
+}
+
+/* Form focus — terracotta outline instead of teal */
+.form-control:focus,
+.input-group.focus {
+  outline-color: #C9581E !important;
+  border-color: #C9581E !important;
+}

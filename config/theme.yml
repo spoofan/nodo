@@ -35,6 +35,10 @@ assets:
         path: assets/css/custom.css
         media: all
         priority: 200
+      - id: child-overrides
+        path: assets/css/overrides.css
+        media: all
+        priority: 210
 
 global_settings:
   configuration:
