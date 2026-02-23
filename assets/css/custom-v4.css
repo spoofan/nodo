@@ -822,8 +822,8 @@ img.logo {
   display: none !important;
 }
 
-/* Add to cart + quantity */
-#add-to-cart-or-refresh,
+/* Add to cart + quantity — hide cart controls but NOT the parent
+   #add-to-cart-or-refresh which also contains .product-variants */
 .product-add-to-cart,
 .add-to-cart,
 .qty {
