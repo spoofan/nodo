@@ -19,6 +19,14 @@ nodo/
     └── theme.yml           ← PS asset registration
 ```
 
+## Git
+
+```bash
+git config user.email "lukynem@gmail.com"
+git config user.name "Lukáš Němeček"
+```
+(Already set locally — just for reference if the repo is re-cloned.)
+
 ## Deploy
 
 ```bash
