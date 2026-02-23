@@ -143,3 +143,9 @@ section.product-accessories + section,
 [id^="product-comments"] {
   display: none !important;
 }
+
+/* Language & currency selectors */
+.language-selector-wrapper,
+.currency-selector {
+  display: none !important;
+}
