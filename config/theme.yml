@@ -31,11 +31,11 @@ assets:
   use_parent_assets: true
   css:
     all:
-      - id: child-custom-style
-        path: assets/css/custom.css
+      - id: child-custom-style-v2
+        path: assets/css/custom-v2.css
         media: all
         priority: 200
-      - id: child-overrides
+      - id: child-overrides-v2
         path: assets/css/overrides.css
         media: all
         priority: 210
