@@ -1,0 +1,430 @@
+/* Nodo — Specificity overrides (loaded after custom-v8.css, priority 210)
+   v19 — Refined Luxury edition — deep charcoal / brushed gold / warm cream */
+
+/* ============================================================
+   BASE — override parent Classic theme's light #wrapper background
+   ============================================================ */
+
+#wrapper,
+#main,
+.container,
+section.featured-products {
+  background-color: var(--nodo-bg) !important;
+}
+
+/* ============================================================
+   PRODUCT FLAGS
+   ============================================================ */
+
+/* NEW — gold badge */
+.product-flag.new,
+.product-flags li.product-flag.new {
+  background: #C4A265 !important;
+  color: #0F0F0F !important;
+}
+
+/* Discount / sale — warm cream on dark */
+.product-flag.discount,
+.product-flag.on-sale,
+.product-flags li.product-flag.discount,
+.product-flags li.product-flag.discount-amount,
+.product-flags li.product-flag.discount-percentage,
+.product-flags li.product-flag.on-sale {
+  background: #F5F0E8 !important;
+  background-color: #F5F0E8 !important;
+  color: #0F0F0F !important;
+}
+
+/* ============================================================
+   BUTTONS — gold fill, dark text
+   ============================================================ */
+
+.btn-primary,
+a.btn-primary,
+button.btn-primary {
+  background-color: #C4A265 !important;
+  border-color: #C4A265 !important;
+  color: #0F0F0F !important;
+  border-radius: 0 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+a.btn-primary:hover,
+button.btn-primary:hover {
+  background-color: #A88A52 !important;
+  border-color: #A88A52 !important;
+  color: #0F0F0F !important;
+}
+
+/* ============================================================
+   LINKS on hover — gold
+   ============================================================ */
+
+#header a:hover {
+  color: #C4A265 !important;
+}
+
+/* ============================================================
+   FORM FOCUS — gold outline
+   ============================================================ */
+
+.form-control:focus,
+.input-group.focus {
+  outline-color: #C4A265 !important;
+  border-color: #C4A265 !important;
+  box-shadow: 0 0 0 2px rgba(196, 162, 101, 0.18) !important;
+}
+
+/* ============================================================
+   LOGO
+   ============================================================ */
+
+img.logo {
+  width: 52px !important;
+  height: 52px !important;
+  object-fit: contain !important;
+}
+
+/* ============================================================
+   SEARCH — fix overflow in header
+   ============================================================ */
+
+#search_widget {
+  overflow: hidden !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+#search_widget input[type="text"] {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  flex: 1 !important;
+}
+
+/* Search icon: in-flow flex item */
+#search_widget form i.material-icons.search {
+  position: static !important;
+  padding: 0 !important;
+  order: 1 !important;
+}
+
+/* ============================================================
+   CATALOG MODE — hide prices, login, cart, comments
+   (Preserved exactly from v18 — do not remove)
+   ============================================================ */
+
+/* Prices: product listings */
+.product-price,
+.product-price-and-shipping,
+.product-price-and-shipping .price,
+.product-prices,
+.price,
+.regular-price,
+.current-price,
+.current-price-discount,
+.product-discount,
+.has-discount .discount-percentage,
+.discount-percentage,
+.discount-amount,
+.tax-shipping-delivery-label,
+.product-price.h5,
+/* Prices: product detail page */
+.product-information .product-prices,
+#product-details .product-prices,
+/* Prices: cart / checkout */
+.cart-price,
+.subtotal,
+.order-total,
+/* Prices: any remaining price wrapper */
+[class*="product-price"] {
+  display: none !important;
+}
+
+/* Login / account link */
+#_desktop_user_info {
+  display: none !important;
+}
+
+/* Shopping cart icon */
+#_desktop_cart {
+  display: none !important;
+}
+
+/* Force the variant form wrapper visible */
+#add-to-cart-or-refresh {
+  display: block !important;
+}
+
+/* Add to cart section — hide cart controls */
+.product-add-to-cart,
+.add-to-cart,
+.qty {
+  display: none !important;
+}
+
+/* Share / social row on product page */
+.product-actions .social-sharing {
+  display: none !important;
+}
+
+/* Product comments / reviews section */
+#product-comments-list,
+#product-comments-list-footer,
+#post-comment-tab,
+#new-comment-tab,
+.product-comments-section,
+.js-product-comment-posted,
+section.product-accessories + section,
+[id^="product-comments"] {
+  display: none !important;
+}
+
+/* Language & currency selectors */
+.language-selector-wrapper,
+.currency-selector {
+  display: none !important;
+}
+
+/* Top nav bar (Kontaktujte nás) */
+nav.header-nav {
+  display: none !important;
+}
+
+/* Footer: email subscription block */
+#blockEmailSubscription_displayFooterBefore {
+  display: none !important;
+}
+
+/* Footer: Váš účet (customer account links) */
+#block_myaccount_infos {
+  display: none !important;
+}
+
+/* ============================================================
+   PRODUCT IMAGE — hover zoom
+   ============================================================ */
+
+.product-cover {
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+
+.product-cover img {
+  will-change: transform !important;
+}
+
+/* Hide the dark overlay + zoom icon; keep element clickable for modal */
+.product-cover .layer {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+.product-cover .layer i {
+  display: none !important;
+}
+
+/* ============================================================
+   HEADER REDESIGN — Refined Luxury (dark charcoal / gold)
+   ============================================================ */
+
+#header .header-top {
+  background: #0F0F0F !important;
+  border-bottom: 1px solid #2A2A2A !important;
+  transition: box-shadow 0.35s ease !important;
+}
+
+/* Gold accent border at bottom */
+#header .header-top::after {
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent 0%, #C4A265 30%, #C4A265 70%, transparent 100%) !important;
+  opacity: 0.5 !important;
+}
+
+#header .header-top {
+  position: relative !important;
+}
+
+#header.scrolled .header-top {
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.6) !important;
+  background: rgba(10, 10, 10, 0.97) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* Row layout */
+#header .header-top .row:first-child {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 68px !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Logo column */
+#_desktop_logo {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+/* Right col: nav + search */
+.header-top-right {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex: 1 !important;
+  padding-left: 48px !important;
+}
+
+/* Nav wrapper centered */
+#_desktop_top_menu {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#top-menu {
+  display: flex !important;
+  align-items: center !important;
+  gap: 52px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#top-menu > li {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+}
+
+/* Nav links — Playfair Display SC (small caps, understated luxury) */
+#top-menu > li > a {
+  font-family: 'Playfair Display SC', serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: none !important;
+  color: #F5F0E8 !important;
+  text-decoration: none !important;
+  padding: 24px 0 !important;
+  display: block !important;
+  position: relative !important;
+  transition: color 0.22s ease !important;
+  line-height: 1 !important;
+}
+
+/* Gold underline slides in from left on hover */
+#top-menu > li > a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 16px !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 1px !important;
+  background: #C4A265 !important;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#top-menu > li > a:hover {
+  color: #C4A265 !important;
+}
+
+#top-menu > li > a:hover::after,
+#top-menu > li.current > a::after {
+  width: 100% !important;
+}
+
+#top-menu > li.current > a {
+  color: #C4A265 !important;
+}
+
+/* Search on dark background */
+#search_widget {
+  flex: 0 0 auto !important;
+}
+
+#search_widget input[type="text"] {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.05em !important;
+  color: #F5F0E8 !important;
+  background: transparent !important;
+  border-bottom-color: rgba(245, 240, 232, 0.2) !important;
+}
+
+#search_widget input[type="text"]::placeholder {
+  color: rgba(245, 240, 232, 0.35) !important;
+}
+
+#search_widget form {
+  border-bottom-color: rgba(245, 240, 232, 0.2) !important;
+}
+
+#search_widget form i.material-icons.search {
+  color: #C4A265 !important;
+  font-size: 17px !important;
+}
+
+/* ============================================================
+   HOMEPAGE — remove wrapper top padding
+   ============================================================ */
+
+body.page-index #wrapper {
+  padding-top: 0 !important;
+}
+
+/* ============================================================
+   FOOTER — remove top padding
+   ============================================================ */
+
+#footer {
+  padding-top: 0 !important;
+}
+
+.footer-container {
+  padding-top: 0 !important;
+}
+
+/* ============================================================
+   TOP NAV SUBMENU — auto width
+   ============================================================ */
+
+#top-menu .sub-menu {
+  width: auto !important;
+  min-width: max-content !important;
+  background: #0F0F0F !important;
+  border: 1px solid #2A2A2A !important;
+}
+
+#top-menu .sub-menu a {
+  color: #A89F91 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.04em !important;
+}
+
+#top-menu .sub-menu a:hover {
+  color: #C4A265 !important;
+}
+
+/* ============================================================
+   CAROUSEL — figure must be block for absolute img fill
+   ============================================================ */
+
+.carousel .carousel-item figure,
+#homeslider .carousel-item figure {
+  display: block !important;
+}

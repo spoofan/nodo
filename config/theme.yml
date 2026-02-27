@@ -32,17 +32,17 @@ assets:
   css:
     all:
       - id: child-custom-style-v3
-        path: assets/css/custom-v7.css
+        path: assets/css/custom-v8.css
         media: all
         priority: 200
       - id: child-overrides-v12
-        path: assets/css/overrides-v18.css
+        path: assets/css/overrides-v19.css
         media: all
         priority: 210
   js:
     all:
       - id: child-custom-js-v7
-        path: assets/js/custom-v7.js
+        path: assets/js/custom-v8.js
         priority: 200
 
 global_settings:
