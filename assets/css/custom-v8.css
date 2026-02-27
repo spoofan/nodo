@@ -8,14 +8,14 @@
 
 /* === CSS Variables === */
 :root {
-  --nodo-bg:          #0F0F0F;  /* deep charcoal — body */
-  --nodo-bg-elevated: #1A1A1A;  /* card surfaces */
-  --nodo-bg-footer:   #0A0A0A;  /* footer — darkest */
+  --nodo-bg:          #1C1C1C;  /* dark charcoal — body */
+  --nodo-bg-elevated: #272727;  /* card surfaces */
+  --nodo-bg-footer:   #141414;  /* footer — darkest */
   --nodo-ink:         #F5F0E8;  /* warm cream — primary text */
   --nodo-ink-muted:   #A89F91;  /* warm gray — secondary text */
   --nodo-accent:      #C4A265;  /* brushed gold */
   --nodo-accent-dim:  #A88A52;  /* darker gold — hover states */
-  --nodo-border:      #2A2A2A;  /* dark border */
+  --nodo-border:      #333333;  /* dark border */
   --nodo-white:       #FFFFFF;
   --nodo-card-radius: 2px;
   --nodo-transition:  0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
