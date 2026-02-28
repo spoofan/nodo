@@ -1,21 +1,21 @@
 /* ===================================================
    Nodo — Refined Luxury (child-classic theme)
-   v8 — 2026-02-27
-   Palette: deep charcoal / brushed gold / warm cream
+   v8 — 2026-02-28
+   Palette: warm cream / brushed gold / dark ink
    =================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display+SC:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
 
 /* === CSS Variables === */
 :root {
-  --nodo-bg:          #1C1C1C;  /* dark charcoal — body */
-  --nodo-bg-elevated: #272727;  /* card surfaces */
-  --nodo-bg-footer:   #141414;  /* footer — darkest */
-  --nodo-ink:         #F5F0E8;  /* warm cream — primary text */
-  --nodo-ink-muted:   #A89F91;  /* warm gray — secondary text */
+  --nodo-bg:          #F0EBE3;  /* warm cream — body */
+  --nodo-bg-elevated: #FAF8F5;  /* soft white — card surfaces */
+  --nodo-bg-footer:   #1A1A1A;  /* footer — keep dark */
+  --nodo-ink:         #1A1A1A;  /* near-black — primary text */
+  --nodo-ink-muted:   #6B6560;  /* warm gray — secondary text */
   --nodo-accent:      #C4A265;  /* brushed gold */
   --nodo-accent-dim:  #A88A52;  /* darker gold — hover states */
-  --nodo-border:      #333333;  /* dark border */
+  --nodo-border:      #DDD5C8;  /* warm light border */
   --nodo-white:       #FFFFFF;
   --nodo-card-radius: 2px;
   --nodo-transition:  0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -222,7 +222,7 @@ p, li, label, input, select, textarea, .form-control {
 
 .product-miniature:hover {
   border-color: var(--nodo-accent);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6),
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
               0 0 0 1px rgba(196, 162, 101, 0.2);
   transform: translateY(-2px);
 }
@@ -246,7 +246,7 @@ p, li, label, input, select, textarea, .form-control {
   transform: scale(1.04);
 }
 
-/* Dark vignette overlay on hover */
+/* Subtle vignette overlay on hover */
 .thumbnail-container::after {
   content: '';
   position: absolute;
@@ -254,7 +254,7 @@ p, li, label, input, select, textarea, .form-control {
   background: linear-gradient(
     to bottom,
     rgba(15, 15, 15, 0) 50%,
-    rgba(15, 15, 15, 0.6) 100%
+    rgba(15, 15, 15, 0.15) 100%
   );
   opacity: 0;
   transition: opacity var(--nodo-transition);
@@ -330,7 +330,7 @@ p, li, label, input, select, textarea, .form-control {
 .product-flag.new,
 .product-flags li.product-flag.new {
   background: var(--nodo-accent) !important;
-  color: var(--nodo-bg) !important;
+  color: #1A1A1A !important;
 }
 
 .product-flag.discount,
@@ -403,7 +403,7 @@ a.btn-primary,
 button.btn-primary {
   background-color: var(--nodo-accent) !important;
   border-color: var(--nodo-accent) !important;
-  color: var(--nodo-bg) !important;
+  color: #1A1A1A !important;
   border-radius: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -424,7 +424,7 @@ a.btn-primary:hover,
 button.btn-primary:hover {
   background-color: var(--nodo-accent-dim) !important;
   border-color: var(--nodo-accent-dim) !important;
-  color: var(--nodo-bg) !important;
+  color: #1A1A1A !important;
   letter-spacing: 0.18em;
   box-shadow: 0 4px 16px rgba(196, 162, 101, 0.3);
 }
@@ -448,7 +448,7 @@ button.btn-primary:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: var(--nodo-accent);
-  color: var(--nodo-bg);
+  color: #1A1A1A;
   letter-spacing: 0.18em;
   box-shadow: none;
 }
@@ -574,6 +574,10 @@ button.btn-primary:hover {
 .footer-container {
   background-color: var(--nodo-bg-footer);
   color: var(--nodo-ink-muted);
+  /* Scoped overrides: keep footer dark with cream text */
+  --nodo-ink: #F5F0E8;
+  --nodo-ink-muted: #A89F91;
+  --nodo-border: #2A2A2A;
 }
 
 .footer-container {
@@ -646,7 +650,7 @@ button.btn-primary:hover {
 .product-variants .product-variants-item[data-attribute-group="size"] input[type="radio"]:checked + .radio-label {
   border-color: var(--nodo-accent);
   background: var(--nodo-accent);
-  color: var(--nodo-bg);
+  color: #1A1A1A;
 }
 
 .product-variants .product-variants-item[data-attribute-group="size"] .radio-label:hover {
