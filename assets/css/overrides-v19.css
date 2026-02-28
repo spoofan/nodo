@@ -26,6 +26,23 @@ section.featured-products {
 }
 
 /* ============================================================
+   HEADER — keep container transparent (prevents cream bleed)
+   ============================================================ */
+
+#header .container,
+#header .container-fluid {
+  background-color: transparent !important;
+}
+
+/* ============================================================
+   HOMEPAGE — product section vertical spacing
+   ============================================================ */
+
+section.featured-products {
+  padding: 56px 0 64px !important;
+}
+
+/* ============================================================
    FOOTER — full width inner container + keep dark on light theme
    ============================================================ */
 
@@ -35,12 +52,14 @@ section.featured-products {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
   background-color: #1A1A1A !important;
+  text-align: center !important;
 }
 
 #footer,
 .footer-container {
   background-color: #1A1A1A !important;
   color: #A89F91 !important;
+  text-align: center !important;
 }
 
 /* ============================================================
